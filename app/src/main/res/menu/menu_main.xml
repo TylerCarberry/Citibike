@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tytanapps.citibike.MapsActivity">
+
+        <item
+            android:id="@+id/action_settings"
+            android:orderInCategory="500"
+            android:title="@string/action_settings"
+            app:showAsAction="never" />
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/action_spots"
+            android:orderInCategory="150"
+            android:title="Only locations with open spots"
+            android:checkable="true"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_bikes"
+            android:orderInCategory="100"
+            android:title="Only locations with bikes available"
+            android:checkable="true"
+            app:showAsAction="never" />
+
+    </group>
+
+
+
+</menu>

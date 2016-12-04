@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tytanapps.citibike.DetailActivityFragment"
+    tools:showIn="@layout/activity_detail">
+
+    <ImageView
+        android:id="@+id/map_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="false"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:text="Bikes Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_textview"
+        android:layout_alignLeft="@+id/name_textview"
+        android:layout_alignStart="@+id/name_textview"
+        android:id="@+id/bikes_available_textview"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="Spots available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bikes_available_textview"
+        android:layout_alignLeft="@+id/bikes_available_textview"
+        android:layout_alignStart="@+id/bikes_available_textview"
+        android:id="@+id/docks_available_textview"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_textview"
+        android:layout_below="@id/map_imageview"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:text="Directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/docks_available_textview"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/directions_button" />
+</RelativeLayout>

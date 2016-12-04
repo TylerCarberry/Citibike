@@ -1,11 +1,12 @@
 package com.tytanapps.citibike;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * @author Tyler Carberry
  */
-public class Station {
+public class Station implements Serializable {
 
     int station_id;
     String name;

@@ -9,8 +9,7 @@ import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 
 public class OwnRendring extends DefaultClusterRenderer<MyItem> {
 
-    public OwnRendring(Context context, GoogleMap map,
-                       ClusterManager<MyItem> clusterManager) {
+    public OwnRendring(Context context, GoogleMap map, ClusterManager<MyItem> clusterManager) {
         super(context, map, clusterManager);
     }
 

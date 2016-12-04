@@ -9,6 +9,8 @@ public class MyItem implements ClusterItem {
     BitmapDescriptor icon;
     String title;
     String snippet;
+    BikeData bikeData;
+
 
     public MyItem(BitmapDescriptor icon, Double lat , Double lon, String title ,String snippet)
     {
@@ -22,5 +24,9 @@ public class MyItem implements ClusterItem {
     @Override
     public LatLng getPosition() {
         return mPosition;
+    }
+
+    public String toString() {
+        return "MYITEM";
     }
 }

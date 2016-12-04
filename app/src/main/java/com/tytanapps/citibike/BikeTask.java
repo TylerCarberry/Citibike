@@ -30,8 +30,6 @@ public class BikeTask extends AsyncTask<Void, Void, BikeData> {
             mergeStations(bikeStation, infoStation);
         }
 
-
-
         return bikeData;
     }
 
